@@ -1,5 +1,5 @@
 package collection
 
-func Pop(a []int) []int {
-	return a[:len(a)-1]
+func Pop(a []int) ([]int, int) {
+	return a[:len(a)-1], a[len(a)-1]
 }
